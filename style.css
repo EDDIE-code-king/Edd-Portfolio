@@ -989,4 +989,192 @@ span {
 .contact-info a:hover {
     text-decoration: underline;
 }
-  
+
+/* Improved Responsive Styles */
+
+@media screen and (max-width: 1024px) {
+    .header {
+        height: 80px;
+        padding: 12px 18px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .menu-button {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        color: #fff;
+        background: none;
+        border: none;
+        z-index: 200;
+    }
+    
+    .navbar {
+        display: none;
+    }
+    
+    .logo-container {
+        display: flex;
+        align-items: center;
+        max-width: 172px;
+        height: 69px;
+    }
+    
+    .logo-container img {
+        width: 46px;
+        height: 46px;
+    }
+    
+    .logo {
+        font-size: 20px;
+    }
+    
+    .home {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 40px 10px;
+        position: relative;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .home-content {
+        width: 45%;
+        max-width: 525px;
+        text-align: left;
+        position: relative;
+        top: 15%;
+        z-index: 2;
+        margin-bottom: 40px; /* Increased space between .home-content and .home-sci */
+    }
+    
+    .home-sci {
+        position: relative;
+        z-index: 2;
+        margin-bottom: 20px;
+    }
+    
+    .btn-box {
+        width: 80%;
+    }
+    
+    .home-imgHover {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        transition: 0.5s;
+        z-index: 1;
+        right: 0;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        height: 69px;
+        padding: 12px 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .menu-button {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        color: #fff;
+        background: none;
+        border: none;
+        z-index: 200;
+    }
+    
+    .navbar {
+        display: none;
+    }
+    
+    .logo-container {
+        max-width: 150px;
+        height: 57px;
+    }
+    
+    .logo-container img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .logo {
+        font-size: 18px;
+    }
+    
+    .home {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 40px 10px;
+        position: relative;
+    }
+    
+    .home-content {
+        width: 95%;
+        max-width: 420px;
+        text-align: center;
+        position: relative;
+        top: 15%;
+        z-index: 2;
+        margin-bottom: 40px; /* Increased space between .home-content and .home-sci */
+    }
+    
+    .home-sci {
+        position: relative;
+        z-index: 2;
+        margin-bottom: 20px;
+    }
+    
+    .btn-box {
+        width: 80%;
+    }
+    
+    .home-imgHover {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        transition: 0.5s;
+        z-index: 1;
+        right: 0;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+    
+    .mixes-container, .promo-videos-container, .events-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .audio-mixes, .video-mixes {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .audio-mixes iframe, .video-mixes iframe {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .events-slideshow {
+        width: 100%;
+    }
+    
+    .rate-card-table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+    }
+}
